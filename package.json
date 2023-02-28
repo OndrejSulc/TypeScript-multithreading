@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "process": "^0.11.10",
+    "threads": "^1.7.0"
+  }
+}

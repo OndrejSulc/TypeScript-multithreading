@@ -3,7 +3,6 @@
   {
 
     "moduleResolution": "node",
-    "forceConsistentCasingInFileNames" : true,
     "baseUrl": ".",
     "rootDir": ".",
     "removeComments": true,

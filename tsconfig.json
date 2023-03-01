@@ -1,5 +1,17 @@
 {
-  "compilerOptions": {
+  "compilerOptions":
+  {
+
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames" : true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "removeComments": true,
+    //"sourceMap": true,
+    //"outDir": "dist",
+    "paths": {
+      "@utilities": [ "./shared/utilities" ],
+    },
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */

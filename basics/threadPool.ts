@@ -12,22 +12,17 @@ main().then( () => console.log("finished") );
 
 
 
-
 async function main() {
 
   const pool = Pool(() => spawn<ProcessKpiWorker>(new Worker("./worker")))
 
-  pool.queue( w => w("1"));
-  pool.queue( w => w("2"));
-  pool.queue( w => w("3"));
-  pool.queue( w => w("4"));
-  pool.queue( w => w("5"));
-  pool.queue( w =>{ return w("6"); });
+  for( let i=0; i < 8; i += 1)
+  {
+    pool.queue( w => w(i));
+  }
 
   await pool.completed();
-
   console.log("job's done");
-
   await pool.terminate();
 }
 
